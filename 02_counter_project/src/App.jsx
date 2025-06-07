@@ -9,7 +9,7 @@ function App() {
   let [counter, setCounter] = useState(0); // added useState() hook
 
   function addValue() {
-    counter += 1;
+    counter += 1; // not good approach, causses mutation
     setCounter(counter);
   }
 
