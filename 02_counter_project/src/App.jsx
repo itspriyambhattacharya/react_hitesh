@@ -3,21 +3,24 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
-function addValue(a) {
-  console.log("Adding Value", Math.random());
-
-  // a++;
-  // return a;
-}
-
-function decValue(a) {
-  console.log("Decreasing Value", Math.random());
-  // a--;
-  // return a;
-}
-
 function App() {
   let counter = 3;
+
+  function addValue() {
+    console.log("Adding Value", Math.random());
+    counter++;
+
+    console.log("Counter add Value", counter);
+    return counter;
+  }
+
+  function decValue() {
+    console.log("Decreasing Value", Math.random());
+    counter--;
+
+    console.log("Counter decrease Value", counter);
+    return counter;
+  }
 
   return (
     <>
