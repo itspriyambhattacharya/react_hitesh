@@ -9,19 +9,12 @@ function App() {
   let [counter, setCounter] = useState(0); // added useState() hook
 
   function addValue() {
-    console.log("Adding Value", Math.random());
-    counter++;
-
-    console.log("Counter add Value", counter);
-    return counter;
+    counter += 1;
+    setCounter(counter);
   }
 
   function decValue() {
-    console.log("Decreasing Value", Math.random());
-    counter--;
-
-    console.log("Counter decrease Value", counter);
-    return counter;
+    setCounter(counter - 1);
   }
 
   return (
@@ -34,6 +27,7 @@ function App() {
       <button id="remVal" onClick={decValue}>
         Remove Value
       </button>
+      <p>footer: {counter}</p>
     </>
   );
 }
