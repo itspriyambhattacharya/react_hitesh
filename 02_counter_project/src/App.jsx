@@ -17,14 +17,28 @@ function App() {
     setCounter(counter - 1);
   }
 
+  // Assignment - The value of counter should be in the range of 0 to 20 both inclusive
+
+  const addValueAssignment = () => {
+    if (counter < 20) {
+      setCounter(counter + 1);
+    }
+  };
+
+  const decValueAssignment = () => {
+    if (counter > 0) {
+      setCounter(counter - 1);
+    }
+  };
+
   return (
     <>
       <h1>Counter Project and learning Hooks</h1>
       <h3>Counter Value: {counter}</h3>
-      <button id="addVal" onClick={addValue}>
+      <button id="addVal" onClick={addValueAssignment}>
         Add Value
       </button>
-      <button id="remVal" onClick={decValue}>
+      <button id="remVal" onClick={decValueAssignment}>
         Remove Value
       </button>
       <p>footer: {counter}</p>
