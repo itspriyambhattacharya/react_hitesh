@@ -4,7 +4,9 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
-  let counter = 3;
+  // let counter = 3; wrong method to update state in react, problem in state and ui sync
+
+  let [counter, setCounter] = useState(0); // added useState() hook
 
   function addValue() {
     console.log("Adding Value", Math.random());
