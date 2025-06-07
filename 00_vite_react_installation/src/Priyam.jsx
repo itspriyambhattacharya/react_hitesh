@@ -1,6 +1,6 @@
-function showName() {
+function Priyam() {
   return <h3>Hello Priyam</h3>; // creating my custom function
 }
 
 // exporting my custom function
-export default showName;
+export default Priyam;
