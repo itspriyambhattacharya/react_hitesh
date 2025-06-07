@@ -1,5 +1,7 @@
+import Priyam from "./Priyam";
+
 function App() {
-  return <h1>Hello World</h1>;
+  return <Priyam />;
 }
 
 export default App;
