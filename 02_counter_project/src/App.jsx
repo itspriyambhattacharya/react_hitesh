@@ -41,6 +41,13 @@ function App() {
       <button id="remVal" onClick={decValueAssignment}>
         Remove Value
       </button>
+      <br />
+      <a
+        href="https://github.com/acdlite/react-fiber-architecture"
+        target="_blank"
+      >
+        React Fibre Architecture (Read)
+      </a>
       <p>footer: {counter}</p>
     </>
   );
