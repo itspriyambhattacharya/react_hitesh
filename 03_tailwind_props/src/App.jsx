@@ -5,13 +5,19 @@ import "./App.css";
 import Card from "./Components/Card";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const objName = {
+    fname: "Dummy",
+    lname: "Name",
+  };
+
+  const arr = [1, 3, 4, 5, 6];
 
   return (
     <>
       <h1 className="bg-amber-600">Hello Tailwind + React</h1>
-      <Card />
-      <Card />
+      <Card name="Priyam Bhattacharya" age="23" />
+
+      <Card dummyName={objName} dummyArr={arr} />
     </>
   );
 }
